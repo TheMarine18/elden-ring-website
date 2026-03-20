@@ -1,7 +1,48 @@
+:root {
+    --er-gold: #f9c043;      /* Bright Grace gold */
+    --er-dark-gold: #bd6707; /* Weathered gold */
+    --er-bg: #040200;        /* Deep void black */
+    --er-surface: #1a120b;   /* Dark brown menu background */
+    --er-border: #653815;    /* Ornate border brown */
+}
+
 body {
-    background-color: #1a1a1a; /* Dark background */
-    color: #d4af37;           /* Gold text color */
-    font-family: 'Georgia', serif;
+    background-color: var(--er-bg);
+    color: #e0e0e0; /* Light grey for readability */
+    font-family: 'serif', 'Georgia', Times;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to bottom, var(--er-surface), var(--er-bg));
+    padding: 60px 20px;
+    border-bottom: 2px solid var(--er-dark-gold);
     text-align: center;
-    padding: 50px;
+}
+
+h1 {
+    color: var(--er-gold);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px rgba(249, 192, 67, 0.4);
+}
+
+/* A button that looks like a menu option */
+button {
+    background: transparent;
+    border: 1px solid var(--er-border);
+    color: var(--er-gold);
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background: var(--er-dark-gold);
+    color: white;
+    box-shadow: 0 0 10px var(--er-gold);
 }
